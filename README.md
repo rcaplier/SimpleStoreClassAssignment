@@ -1,27 +1,62 @@
-# SimpleStoreClassAssignment
+# **Simple Store Class Assignment**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+<!-- TOC -->
+* [**Simple Store Class Assignment**](#simple-store-class-assignment)
+  * [Installation](#installation)
+  * [Context](#context)
+  * [Task Description](#task-description)
+  * [Requirements](#requirements)
+  * [Technical Details](#technical-details)
+  * [How to Submit Your Solution](#how-to-submit-your-solution)
+  * [Evaluation Criteria](#evaluation-criteria)
+<!-- TOC -->
 
-## Development server
+## Installation
+
+Run `git clone git@github.com:rcaplier/SimpleStoreClassAssignment.git`
+
+Run `yarn install` or `npm install`
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Context
 
-## Build
+We are managing a variety of user-generated content and data. To systematically manage this
+data, we're introducing the concept of the `Store` class. This class will serve as a structured
+storage utility.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Task Description
 
-## Running unit tests
+Your task is to implement a basic `Store` class in TypeScript. The class should provide methods to
+manage and retrieve user-generated content and data.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Requirements
 
-## Running end-to-end tests
+1. Storage: The `Store` class should be able to:
+- Store JSON values.
+- Retrieve stored values.
+- List all stored entries.
+2. Nested Keys: The store should handle nested keys using a dot notation, e.g.,
+   `user.address.city`. This implies storing and accessing nested objects within the store.
+3. Serializability: The store should be able to be serialized to json.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+###    Technical Details
 
-## Further help
+- Implement the `Store` class in `store.ts`.
+- Ensure the class can handle nested keys and checks for serializability before storing values.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+###   How to Submit Your Solution
+
+1. Develop the `Store` class with the mentioned requirements.
+3. Push your changes to a github repository.
+4. Share the link to your repository for review.
+
+###    Evaluation Criteria
+
+1. Clarity and quality of your code.
+2. The correctness of the implementation.
+3. Following TypeScript and JavaScript best practices.
+   Guidance
+   Write code that's clean, efficient, and structured well. Pay attention to proper error handling,
+   concise function and variable names, and an organized code structure.
