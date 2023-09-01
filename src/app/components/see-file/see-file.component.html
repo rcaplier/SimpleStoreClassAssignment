@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row my-3">
+    <div class="col-2">
+      <span class="link-secondary link-underline">FileName :</span>
+    </div>
+    <div class="col-9">
+      {{ file?.fileName}}
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col-2">
+      <span class="link-secondary link-underline">Content :</span>
+    </div>
+    <div class="col-9">
+      {{ file?.data | json }}
+    </div>
+  </div>
+  <div class="row my-5">
+    <div class="col-4">
+      <label for="fileName" class="form-label">Search for value (using dot notation) :</label>
+      <input class="form-control" type="text"  id="fileName" [(ngModel)]="valueSearch" (keyup)="checkValue()">
+    </div>
+    <div class="col-4 d-flex align-items-end">
+      Value : {{ value }}
+    </div>
+  </div>
+</div>

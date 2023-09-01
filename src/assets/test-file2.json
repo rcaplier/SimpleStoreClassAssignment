@@ -1,0 +1,30 @@
+{
+  "user": {
+    "id": 12345,
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com",
+    "profile": {
+      "bio": "Software Developer from California.",
+      "skills": ["JavaScript", "Python", "React", "Node.js"],
+      "education": {
+        "university": "Stanford University",
+        "degree": "Bachelor's in Computer Science",
+        "year": 2020
+      },
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/jane-doe",
+        "github": "https://github.com/janedoe",
+        "twitter": "https://twitter.com/janedoe_dev"
+      }
+    },
+    "preferences": {
+      "theme": "dark",
+      "language": "en_US",
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "push": true
+      }
+    }
+  }
+}
